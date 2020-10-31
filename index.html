@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- plugin -->
+    <link rel="stylesheet" href="assets/wow/css/animate.css">
+    <!-- plugin -->
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Javascrip and jQuery</title>
+  </head>
+  <body>
+
+  <section class="menubar">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand logo" href="index.html">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" target="_blank">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html" target="_blank">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Course</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Channel</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+  
+  <section class="counter_p">
+    <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h2>Counter Option is used here</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="wrapper text-center">
+          <h1 class="counter">746352</h1>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="wrapper text-center">
+          <h1 class="counter">0.25425</h1>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="wrapper text-center">
+          <h1 class="counter">1,234,567.00</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+  <section class="red">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="wow_p wow fadeInLeft " data-wow-duration="2s" data-wow-delay="">
+            <h2>Wow js is used here</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi enim amet soluta temporibus pariatur officiis suscipit consequatur laboriosam, harum architecto asperiores esse ratione ipsum quae quis facere ad eum similique laudantium rerum incidunt rem voluptates autem ex doloribus. Numquam laboriosam, distinctio obcaecati! Omnis voluptatibus, perspiciatis repellendus exercitationem ullam quisquam tenetur officiis, a, delectus nemo et. Facilis ex et ipsum dolorem libero natus eaque deleniti nobis eos quasi quis, neque, aspernatur rerum repellendus. Aspernatur atque, rem voluptatem, unde amet culpa, dicta alias quia odit, excepturi consequatur hic assumenda! Incidunt deserunt dolore quis nihil, temporibus labore. Aliquam deserunt, necessitatibus numquam quos aperiam?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="paralax">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="para_content text-center">
+          <h2>Parallax js is used here</h2>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="parallax-window" data-parallax="scroll" data-image-src="images/banner.jpg"></div>
+      </div>
+      <div class="col-md-12">
+        <div class="parallax-window" data-parallax="scroll" data-image-src="images/banner2.jpg"></div>
+      </div>
+      <div class="col-md-12">
+        <div class="parallax-window" data-parallax="scroll" data-image-src="images/banner3.jpg"></div>
+      </div>
+    </div>
+  </div>
+  </section>
+ 
+
+
+    <!-- JS links -->
+    <script src="js/jquery.min.js"></script>
+    <!-- plugin -->
+    <script src="assets/parallax/parallax.min.js"></script>
+    <script src="assets/Counter/waypoints.min.js"></script>
+    <script src="assets/Counter/jquery.counterup.min.js"></script>
+    <script src="assets/wow/js/wow.min.js"></script>
+    <!-- plugin -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      $(document).ready(function(){
+        // counterup
+        $('.counter').counterUp({
+          delay: 10,
+          time: 1000
+        });
+
+      });
+
+      // wow js
+      new WOW().init();
+      
+    </script>
+
+  </body>
+</html>
+

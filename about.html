@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- plugin -->
+    <link rel="stylesheet" href="assets/wow/css/animate.css">
+    <!-- plugin -->
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Javascrip and jQuery</title>
+  </head>
+  <body>
+
+    <section class="menubar">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand logo" href="index.html">Logo</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" target="_blank">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Course</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Channel</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section class="show_hide">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <h2>Show hide option</h2>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+              <div class="btn-class text-center">
+                <h3 class="shw">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur officiis reprehenderit.</h3>
+                <button class="mbtn btn btn-danger ">Show</button>
+                <button class="mbtn2 btn btn-info">Hide</button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alert_part">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <h2>Alert option is used here.</h2>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+              <div class="btn-class text-center">
+                <button class="alert_bt btn btn-danger ">Show Alert</button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fade_part">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <h2>Fade option is used here.</h2>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+              <div class="btn-class text-center">
+                <div class="box1"></div>
+                <div class="box2"></div><br>
+                <button class="fade_in btn btn-danger ">Fade Out</button>
+                <button class="fade_out btn btn-success ">Fade Out</button>
+                <button class="fade_toogle btn btn-info ">Fade Toggle</button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide_part">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <h2>Slide option is used here.</h2>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+              <div class="btn-class text-center">
+                <button class="slide_up btn btn-danger ">Slide Up</button>
+                <button class="slide_down btn btn-success ">Slide Down</button>
+                <button class="slide_toggle btn btn-info ">Slide Toggle</button>
+                <h6 class="h_6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda numquam temporibus quibusdam, molestias autem dignissimos quo quod est consectetur beatae reiciendis eligendi provident officiis sint ut earum debitis in repudiandae magnam illo aliquam voluptate quas corporis labore consequatur. Error, totam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. A fugit ducimus deleniti vel quod alias corrupti aperiam assumenda quae, consequuntur!</h6>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+ 
+
+
+    <!-- JS links -->
+    <script src="js/jquery.min.js"></script>
+    <!-- plugin -->
+    <script src="assets/parallax/parallax.min.js"></script>
+    <script src="assets/Counter/waypoints.min.js"></script>
+    <script src="assets/Counter/jquery.counterup.min.js"></script>
+    <script src="assets/wow/js/wow.min.js"></script>
+    <!-- plugin -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.mbtn').click(function(){
+          $('.shw').show(2000);
+        });
+
+        $('.mbtn2').click(function(){
+          $('.shw').hide(2000);
+        });
+        // alert
+        $('.alert_bt').click(function(){
+          alert('Hello World!');
+        });
+        // fade_in
+        $('.fade_in').click(function(){
+          $('.box1').fadeOut();
+        });
+        $('.fade_out').click(function(){
+          $('.box1').fadeIn();
+        });
+        $('.fade_toogle').click(function(){
+          $('.box1').fadeToggle();
+        });
+        // slide
+        $('.slide_up').click(function(){
+          $('.h_6').slideUp(2000);
+        });
+        $('.slide_down').click(function(){
+          $('.h_6').slideDown(2000);
+        });
+        $('.slide_toggle').click(function(){
+          $('.h_6').slideToggle(2000);
+        });
+
+      });
+      
+    </script>
+
+  </body>
+</html>
+
